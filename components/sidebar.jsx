@@ -201,7 +201,7 @@ const showBackButton =
           BOOKMARKS
         </Link>
       </nav>
-      <div className="flex-1 overflow-y-auto text-sm mt-4 mb-4 px-5">
+      <div className="flex-1 overflow-y-auto text-sm mt-4 mb-4 ">
         {selectedProduct ? (
           <ProductDetailsSidebar
             product={selectedProduct}
@@ -216,7 +216,7 @@ const showBackButton =
         )}
       </div>
     </div>
-    <div className="hidden lg:flex items-center gap-5 px-10">
+    <div className="hidden lg:flex items-center gap-5 px-5">
       <label htmlFor="Find" className="text-sm font-medium">
         Find
       </label>
