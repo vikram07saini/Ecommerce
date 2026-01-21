@@ -1,7 +1,6 @@
 "use client";
-
-import { ProductProvider } from "@/context/ProductContext";
-import { useProduct } from "@/context/ProductContext";
+import { ProductProvider } from "@/Context/ProductContext";
+import { useProduct } from "@/Context/ProductContext.";
 import { usePathname } from "next/navigation";
 import Sidebar from "@/components/sidebar";
 
