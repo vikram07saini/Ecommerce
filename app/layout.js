@@ -1,14 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/sidebar";
+import SHOP from "@/app/Shop/page.jsx";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["100","200","300","400","500","600","700","800","900"],
 });
 
 export const metadata = {
@@ -19,10 +18,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${inter.variable} antialiased`}>
+        
+<div className="grid grid-cols-1 lg:grid-cols-12 h-screen">
+
+
+  <aside className="lg:col-span-3 overflow-y-auto bg-[#F5F5F5]">
+    <Sidebar />
+  </aside>
+  <main 
+  
+  id="main-scroll"
+  className="lg:col-span-9  overflow-y-auto h-screen bg-gray-100 flex justify-center lg:justify-start">
+    <div className="w-full max-w-5xl lg:max-w-none">
+      <SHOP />
+    
+    </div>
+  </main>
+
+</div>
+
+
       </body>
     </html>
   );
