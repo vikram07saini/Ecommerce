@@ -202,7 +202,7 @@ const showBackButton =
               BOOKMARKS
             </Link>
           </nav>
-          <div className="hidden lg:block flex-1 overflow-y-auto pr-[-5px] text-sm mt-4 ">
+          <div className="hidden lg:block flex-1 overflow-y-auto pr-[-5px] text-sm mt-4 mb-8">
             {selectedProduct ? (
               <ProductDetailsSidebar
                 product={selectedProduct}
@@ -217,10 +217,10 @@ const showBackButton =
             )}
           </div>
 
-          <div className="hidden lg:flex pr-15 p-5 items-center gap-1 bg-green-200">
+          <div className="hidden lg:flex pr-10 p-2 pb-6 items-center gap-5 ml-3 mt-2">
             <label htmlFor="Find">Find</label>
             <input
-              className="bg-gray-100 text-sm w-full p-3 rounded-lg"
+              className="bg-gray-100 text-sm w-150 p-3 rounded-lg "
               placeholder="Search Brand, Style, Colour or Year"
             />
           </div>

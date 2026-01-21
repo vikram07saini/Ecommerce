@@ -372,7 +372,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="lg:hidden flex gap-2 bg-gray-100">
+              <div className="lg:hidden flex gap-2 bg-gray-100 ">
                 <Image
                   src={selectedShoe.img}
                   alt="related"
@@ -415,7 +415,7 @@ export default function Page() {
             <div className="mt-8 pl-8 lg:hidden bg-gray-100">
               <h1>SIMILAR PRODUCTS</h1>
             </div>
-            <div className="flex gap-5 pb-20 items-center pl-7 bg-gray-100">
+            <div className="flex gap-5 md:pb-20 lg:pb-3 items-center pl-7 bg-gray-100 pt-50">
               <Image
                 src={selectedShoe.img}
                 alt="shoe360"
@@ -485,7 +485,7 @@ export default function Page() {
       rounded-2xl
       p-5
       fixed
-      bottom-6
+      bottom-4
       right-6
       z-50
       w-[calc(100%-440px)]

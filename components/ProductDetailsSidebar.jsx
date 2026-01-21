@@ -35,8 +35,8 @@ export default function ProductDetailsSidebar({ product }) {
           footwear silhouette combining comfort and protection...
         </p>
 
-        <div className="pt-[40px]">
-          <p className="font-semibold">SIMILAR PRODUCTS</p>
+        <div className="pt-[150px]">
+          <p className="font-semibold"> PRODUCTS</p>
           <div className="flex gap-7">
             <Image src={RelatedImg} alt="related" width={150} height={150} />
             <Image
